@@ -7,7 +7,7 @@ public class CalcTest {
     @Test
     @DisplayName("Расчет месячного платежа")
     public void monthlyPayment() {
-        Calculator calc = null;
+        Calculator calc = new CalculatorImpl();
         int creditAmount = 100000;
         double interestRate = 20;
         int numberMonths = 12;
@@ -20,7 +20,7 @@ public class CalcTest {
     @Test
     @DisplayName("Расчет общей суммы к возврату в банк")
     public void refundToTheBank() {
-        Calculator calc = null;
+        Calculator calc = new CalculatorImpl();
         int creditAmount = 100000;
         double interestRate = 20;
         int numberMonths = 12;
@@ -32,7 +32,7 @@ public class CalcTest {
     @Test
     @DisplayName("Расчет переплаты за весь период")
     public void calculationOfOverpayment() {
-        Calculator calc = null;
+        Calculator calc = new CalculatorImpl();
         int creditAmount = 100000;
         double interestRate = 20;
         int numberMonths = 12;
